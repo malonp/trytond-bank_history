@@ -26,8 +26,7 @@ from trytond.pool import PoolMeta
 __all__ = ['Bank', 'BankAccount', 'BankAccountNumber', 'BankAccountParty']
 
 
-class Bank:
-    __metaclass__ = PoolMeta
+class Bank(metaclass=PoolMeta):
     __name__ = 'bank'
 
     @classmethod
@@ -36,8 +35,7 @@ class Bank:
         cls._history = True
 
 
-class BankAccount:
-    __metaclass__ = PoolMeta
+class BankAccount(metaclass=PoolMeta):
     __name__ = 'bank.account'
 
     @classmethod
@@ -46,8 +44,7 @@ class BankAccount:
         cls._history = True
 
 
-class BankAccountNumber:
-    __metaclass__ = PoolMeta
+class BankAccountNumber(metaclass=PoolMeta):
     __name__ = 'bank.account.number'
 
     @classmethod
@@ -56,8 +53,7 @@ class BankAccountNumber:
         cls._history = True
 
 
-class BankAccountParty:
-    __metaclass__ = PoolMeta
+class BankAccountParty(metaclass=PoolMeta):
     __name__ = 'bank.account-party.party'
 
     @classmethod
