@@ -25,9 +25,4 @@ from .bank import *
 
 
 def register():
-    Pool.register(
-        Bank,
-        BankAccount,
-        BankAccountNumber,
-        BankAccountParty,
-        module='bank_history', type_='model')
+    Pool.register(Bank, BankAccount, BankAccountNumber, BankAccountParty, module='bank_history', type_='model')
