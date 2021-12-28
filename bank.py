@@ -22,7 +22,6 @@
 
 from trytond.pool import PoolMeta
 
-
 __all__ = ['Bank', 'BankAccount', 'BankAccountNumber', 'BankAccountParty']
 
 
